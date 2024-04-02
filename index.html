@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<link rel="stylesheet" href="styles.css">
+<script src="main.js" defer></script>
+<title>Chicago Art Institute API</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Chicago Art Institute API</h1>
+        <div class="gallery container">
+            <div class="row">
+                <figure class="col-md" id="fig1" onclick="event.stopPropagation(); getPainting('img1', event)">
+                    <img src="/static/Alphabet_1959.jpg" id="img1" alt="Alphabet" class="gallery_img img-fluid border rounded">
+                    <figcaption></figcaption>
+                </figure>
+                <figure class="gallery_item gallery_item-2 col-md" id="fig2" onclick="event.stopPropagation(); getPainting('img2', event)">
+                    <img src="/static/Coat_hanger_2_1960.jpg" id="img2" alt="Coat Hanger" class="gallery_img img-fluid border rounded">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            <div class="row">
+                <figure class="gallery_item gallery_item-3 col-md" id="fig3" onclick="event.stopPropagation(); getPainting('img3', event)">
+                    <img src="/static/Corpse_and_mirror_ii.jpg" id="img3" alt="Corpse and mirror" class="gallery_img img-fluid border rounded">
+                    <figcaption></figcaption>
+                </figure>
+                <figure class="gallery_item gallery_item-4 col-md" id="fig4" onclick="event.stopPropagation(); getPainting('img4', event)">
+                    <img src="/static/cup_2.jpg" id="img4" alt="Cup" class="gallery_img img-fluid border rounded">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            <div class="row">
+                <figure class="gallery_item gallery_item-5 col-md" id="fig5" onclick="event.stopPropagation(); getPainting('img5', event)">
+                    <img src="/static/pyre_2.jpg" id="img5" alt="Pyre II" class="gallery_img img-fluid border rounded">
+                    <figcaption></figcaption>
+                </figure>
+                <figure class="gallery_item gallery_item-6 col-md" id="fig6" onclick="event.stopPropagation(); getPainting('img6', event)">
+                    <img src="/static/target.jpg" id="img6" alt="target" class="gallery_img img-fluid border rounded">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
